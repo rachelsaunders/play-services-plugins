@@ -1,13 +1,14 @@
-# Google Play services Plugins
+# Google Play services plugins
 
-This project contains plugins to help with using Google Play services and
-Firebase libraries.
+This project contains plugins to help with using the Google Play services SDK and
+the Firebase SDKs for Android.
 
-## Getting Started
+## Learn more
 
-The plugins contained in this project are meant to work with the Google Play
-services SDK.  See https://developers.google.com/android/guides/overview to
-get started.
+The plugins contained in this project are meant to work with the following:
+
+- Google Play services SDK: https://developers.google.com/android/guides/overview
+- Firebase SDKs for Android: https://firebase.google.com/docs/android/google-services-plugin-and-file
 
 ## Contents
 
@@ -21,9 +22,14 @@ Helps apps to display open source software licenses and notices.
 
 ### google-services-plugin
 
-Required for firebase applications on android, converts google-services.json to a resource file for use by the app, and references the code in strict-version-matcher.
+_Required for and only for use in apps using Firebase SDKs for Android._
 
-## Security & Maintenance
+- Converts `google-services.json` into an Android XML resource file (`values.xml`) read by Firebase SDKs at runtime.
+- Uses [`strict-version-matcher-plugin`](strict-version-matcher-plugin) to verify that Firebase and Google Play services library dependencies have compatible versions.
+
+For details, see the [Firebase documentation](https://firebase.google.com/docs/android/google-services-plugin-and-file).
+
+## Security & maintenance
 
 ### Ratchet
 
